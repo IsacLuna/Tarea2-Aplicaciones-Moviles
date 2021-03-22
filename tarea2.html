@@ -4,41 +4,38 @@
 
     <head>
 
-        <title>Putizorras Web</title>
+        <title>Rick and Morty</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="estilos.css"> 
         <link rel="icon" type="image/png" href="imagen/logo.png">
         
+    
     </head>
 
-    <body style="background-color:#a1ec92;" >
-
-        <style>
-            body {
-              background-image: url('https://www.vodafone.es/c/statics/imagen/img_OG_Rick_y_Morty_T4_V2.jpg');
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-        </style> 
+    <body>
 
         <div style="text-align: center;" >
-
+            
             <h1 style="color: #17FF00">Rick and Morty</h1>
             <button  class="btn btn-danger" onclick="search()">Buscar</button>
             <script src="llamadaApi.js"></script>
 
         </div>
+        <br>
 
         <div id="results"></div>
 
         <table id= "tabla"></table>
 
+        <br>
         <div style="text-align: right;" id="footerPage">
 
-            <button style="display: none;" onclick="back()" id="buttonBack" class = "btn btn-warning"> << </button>
-            <button style="display: none;" onclick="next()" id="buttonNext" class = "btn btn-success">>></button>
+            <button style="display: none;" onclick="back()" id="buttonBack" > << </button>
+            <button style="display: none;" onclick="next()" id="buttonNext" >>></button>
 
         </div>
+
+        <br><br>
 
     </body>
 

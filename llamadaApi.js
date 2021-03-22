@@ -1,4 +1,3 @@
-
 let nextPage = "";
 let lastPage = "";
 let currentApiUrl = "";
@@ -58,11 +57,12 @@ function showApiData(data){
         let celdaImg = row.insertCell(0);
         let celdInfo = row.insertCell(1);
 
-        celdaImg.innerHTML = `<img src="${data.results[i].image}">`;
-        const nombre = `<p>"Nombre: " ${data.results[i].name}</p>`;
-        const genero = `<p>"Género: " ${data.results[i].gender}</p>`;
-        const especie = `<p>"Especie: " ${data.results[i].species}<p>`;
-        celdInfo.innerHTML =  nombre + genero + especie;
+        celdaImg.innerHTML = `<img src="${data.results[i].image}"> <hr>`;
+        const nombre = `<p>Nombre: ${data.results[i].name}</p> `;
+        const genero = `<p>Genero: ${data.results[i].gender}</p>`;
+        const especie = `<p>Especie: ${data.results[i].species}<p>`;
+        celdInfo.innerHTML = nombre +  genero + especie + "<br><br><hr>";
+    
 
     }
 
